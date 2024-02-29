@@ -90,3 +90,9 @@ const w ="We are at Swift Tech Company.";
 console.log(w);
 document.write(w);
 
+document.write("<br>");
+var boolean = "True";
+document.write(boolean);
+document.write("<br>");
+var whole_no = '0, 1, 2, 3, 4, 5, 6, 7, 8, 9,...';
+document.write(typeof(whole_no));
