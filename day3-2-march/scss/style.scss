@@ -22,15 +22,11 @@ button {
     padding: 1em 1.5em;
 }
 
- button:hover {
+button:hover {
     background: #3f5efb;
-background: radial-gradient(circle, #4160fb 0%, #fc466b 100%);
- 
+    background: radial-gradient(circle, #4160fb 0%, #fc466b 100%);
+
 }
-
-
-
-
 
 // .btn-new{
 //     display: flex;
