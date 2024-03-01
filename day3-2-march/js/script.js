@@ -34,6 +34,8 @@ function myFunction() {
     document.getElementById('demo3').innerHTML = 'Hometown California.';
 }
 
+document.getElementById('demo4').innerHTML = (67/9)*99;
+
 
 
 
