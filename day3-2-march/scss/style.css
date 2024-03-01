@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #663399;
+  border-radius: 0.5em;
+  background-color: #b280e4;
+  color: #fff;
+  font-size: 1em;
+  padding: 1em 1.5em;
+}
+
+button:hover {
+  background: #3f5efb;
+  background: radial-gradient(circle, #4160fb 0%, #fc466b 100%);
+}/*# sourceMappingURL=style.css.map */
