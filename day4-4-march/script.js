@@ -83,4 +83,17 @@ document.getElementById("demo12").innerHTML = text1;
 let num = 7 + 100;
 let num$string = 300 + "300";
 let string$num = "788" + 788;
-document.getElementById("demo13").innerHTML = num + "<br>" + num$string + "<br>" + string$num; 
+document.getElementById("demo13").innerHTML = num + "<br>" + num$string + "<br>" + string$num;
+
+let num1 = 79;
+num1--;
+document.getElementById("demo14").innerHTML = num1++;
+
+
+let num2 = 56;
+num3 = num2 ** 2;
+document.getElementById("demo15").innerHTML = num3;
+
+let num4=345;
+let num5= Math.pow(num4, 2);
+document.getElementById("demo16").innerHTML = num5;
