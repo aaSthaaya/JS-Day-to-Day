@@ -68,3 +68,19 @@ let text_first = "Y";
 let text_second = "Z";
 let result = text_first < text_second;
 document.getElementById("demo10").innerHTML = "Is Y less than Z? " + result;
+
+
+let person1 = "Sarah";
+let surname = "Glue";
+let fullName = person1 + " " + surname;
+document.getElementById("demo11").innerHTML = fullName;
+
+let text1 = "What a ";
+text1 += "wonderful world!";
+document.getElementById("demo12").innerHTML = text1;
+
+
+let num = 7 + 100;
+let num$string = 300 + "300";
+let string$num = "788" + 788;
+document.getElementById("demo13").innerHTML = num + "<br>" + num$string + "<br>" + string$num; 
