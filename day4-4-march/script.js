@@ -21,3 +21,8 @@ const m = k * l;
 document.getElementById("demo4").innerHTML = "The value of m is " + m;
 
 
+
+const price_acerlaptop = 87000;
+const price_delllaptop = 92000;
+let total_price = price_acerlaptop + price_delllaptop;
+document.getElementById("demo5").innerHTML = "The total price of the laptop is: " + total_price;
