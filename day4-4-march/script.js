@@ -47,4 +47,24 @@ document.getElementById("demo7").innerHTML = r;
 // We cannot redeclare using let or const keywords
 
 
+let z = 39204;
+let q = (200 * 5) - z;
+document.getElementById("demo8").innerHTML = q;
 
+{
+    let x = 88;
+    x += 7;
+    document.getElementById("demo9").innerHTML = x;
+
+}
+
+document.getElementById("header").innerHTML = "This is Another Header Topic";
+document.getElementById("header_p").innerHTML = "hi, this is kinda fun.";
+
+console.log("helowrrrrrrrrrr");
+console.log(9);
+
+let text_first = "Y";
+let text_second = "Z";
+let result = text_first < text_second;
+document.getElementById("demo10").innerHTML = "Is Y less than Z? " + result;
