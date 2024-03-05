@@ -35,8 +35,43 @@ else {
     document.write("These are different datas.");
 }
 
-// Function myFunc(){
+function myfunc() {
 
-// }
+    var choice = document.getElementById("choices").value;
+
+    // alert(choice);
+
+    switch (choice) {
+        case "add": var a = 200;
+            var b = 300;
+            var sum = a + b;
+            document.write("The sum of two numbers is : " + sum);
+            break;
+
+
+        case "sub": var a = 200;
+            var b = 300;
+            var sub = a - b;
+            document.write("The subtraction of two numbers is : " + sub);
+            break;
+
+
+        case "mul": var a = 200;
+            var b = 300;
+            var mul = a * b;
+            document.write("The multiplication of two numbers is : " + mul);
+            break;
+
+
+        case "div": var a = 200;
+            var b = 300;
+            var div = a / b;
+            document.write("The division of two numbers is : " + div);
+            break;
+
+        default: alert("Not a valid input");
+    }
+
+}
 
 
