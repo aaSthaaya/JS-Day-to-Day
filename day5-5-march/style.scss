@@ -9,17 +9,23 @@ $font_color: #768bec;
 
 body {
     background-color: $bg_color;
-}
-h1{
-    text-align: center;
     line-height: 2em;
 }
+
+h1 {
+    text-align: center;
+
+}
+
 .choice {
     display: flex;
     justify-content: center;
     gap: 1.5em;
+   
+
 
     li {
+       margin: 2em 0;
         list-style: none;
         background-color: aquamarine;
         padding: .5em;
@@ -28,5 +34,13 @@ h1{
         font-weight: 600;
         color: $font_color;
         cursor: pointer;
+
     }
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+   
 }

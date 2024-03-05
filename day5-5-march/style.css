@@ -6,11 +6,11 @@
 
 body {
   background-color: #1b9993;
+  line-height: 2em;
 }
 
 h1 {
   text-align: center;
-  line-height: 2em;
 }
 
 .choice {
@@ -19,6 +19,7 @@ h1 {
   gap: 1.5em;
 }
 .choice li {
+  margin: 2em 0;
   list-style: none;
   background-color: aquamarine;
   padding: 0.5em;
@@ -27,4 +28,10 @@ h1 {
   font-weight: 600;
   color: #768bec;
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }/*# sourceMappingURL=style.css.map */
