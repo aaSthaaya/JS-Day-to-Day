@@ -35,6 +35,8 @@ else {
     document.write("These are different datas.");
 }
 
+// Function myFunc(){
 
+// }
 
 

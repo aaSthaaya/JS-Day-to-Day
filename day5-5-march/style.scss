@@ -1,9 +1,32 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+$bg_color: #1b9993;
+$font_color: #768bec;
 
+body {
+    background-color: $bg_color;
+}
+h1{
+    text-align: center;
+    line-height: 2em;
+}
+.choice {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
 
+    li {
+        list-style: none;
+        background-color: aquamarine;
+        padding: .5em;
+        border-radius: .5em;
+        font-size: larger;
+        font-weight: 600;
+        color: $font_color;
+        cursor: pointer;
+    }
+}
