@@ -18,3 +18,22 @@ let s = "Benz" + 75 + 76;
 document.write(s);
 
 
+document.write("<br>");
+const cars = ["Royace", " Volvo", " BMW"];
+document.write(cars);
+
+
+
+function myFunction(a1, a2) {
+    return a1 * a2;
+}
+
+document.write("<br>");
+let result = myFunction(4, 3);
+document.write(result);
+
+
+
+
+
+
