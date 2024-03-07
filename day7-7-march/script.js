@@ -58,3 +58,10 @@ for (let h = 999; h < 1005; h++) {
 }
 document.getElementById("demo2").innerHTML = verse;
 
+
+
+let z;
+for (let z = 40; z <= 400; z += 40) {
+document.write(z);
+document.write("<br>");
+}
