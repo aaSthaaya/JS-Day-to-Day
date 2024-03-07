@@ -2,4 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #eeaeca;
+  background-image: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  font-size: larger;
+  font-weight: 700;
+  line-height: 2em;
+  margin: 0 20%;
 }/*# sourceMappingURL=style.css.map */
