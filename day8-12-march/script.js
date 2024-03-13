@@ -42,4 +42,19 @@ console.log(string.length);
 console.log(string[string.length-4]);
 
 
+let text = "           jhgdfwyogfewrjhfwyerfhvfwufywerjhfbyrfwhfigfkbfjfhufbfbsudf          ";
+console.log(text.length);
+text = text.trim();
+console.log(text);
+console.log(text.length);
+
+
+
+let alphabet = "  abcdefg     hijklmnopqrstuvwxyz   ";
+console.log(alphabet.length);
+alphabet = alphabet.trim();
+console.log(alphabet.length);
+
+
+
 
