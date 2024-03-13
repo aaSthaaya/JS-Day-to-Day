@@ -47,6 +47,54 @@ console.log(fruits.substr(-8)); //if the first parameter is negative, the positi
 
 console.log(fruits.substring(0, 6));
 
+const country = "The USA is the richest country in the world."
+console.log(country.toUpperCase());
+
+console.log(country.toLowerCase());
+
+function myFunction() {
+
+    let text = document.getElementById('demo1').innerHTML;
+    document.getElementById('demo1').innerHTML = text.toUpperCase();
+
+    console.log(text.toLowerCase());
+    console.log(text.toUpperCase());
+}
+
+
+const textFirst = "Gorkha";
+const textSecond = "Patan";
+const textThird = textFirst.concat(" " + textSecond); //concat string method joins two or more strings.
+
+console.log(textThird);
+
+let place = "  Huwai  ";
+console.log(place.trimStart());
+console.log(place.trimEnd());
+
+let continent = 7;
+let earth = continent.toString(); //if the variable is not string we need to convert it to the string like we did in this example. It is important to see the program we are writing are browser supportive or not.
+document.write(earth.padStart(4, "6"));
+
+console.log(earth.padStart(4, "6"));
+
+let newWord = "Euphoric";
+newWord = newWord.repeat(2);
+console.log(newWord);
+
+let resto = "Hyatt";
+console.log(resto.replace("Hyatt", "Mystic"));
+
+
+let phrase = "I like Dogs so much that i always have had more than 5 dogs with me since my childhood. Dogs are really cute and it is safe to have dogs around. Dogs are more reliable than people.";
+phrase = phrase.replaceAll("Dogs", "Cats");
+phrase = phrase.replaceAll("dogs", "cats");
+
+console.log(phrase);
+
+
+let area = "BackStreet_02 trunk garden";
+console.log(area.split(""));
 
 
 
