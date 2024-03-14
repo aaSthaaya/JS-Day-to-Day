@@ -41,6 +41,7 @@ console.log(typeof (someData + "Wisen")); //string
 
 let firstName = "Damsel";
 firstName = Number(firstName);
+// firstName = String(firstName);
 console.log(typeof firstName);
 
 //adding two strings
@@ -54,6 +55,48 @@ const strFirst = "123";
 const strSecond = "456";
 const newStr = +strFirst + +strSecond;
 console.log(newStr);
+
+//Without the help of template literals (template strings)
+const attendeName = "Sarah";
+const ageOfAttende = 24;
+console.log("The name of the attende is" + " " + attendeName + " " + "and her age is" + " " + ageOfAttende + ".");
+
+//With the help of template strings
+// `Hi` - `` These are called backticks.
+
+const nameFirst = "Yaky";
+const ageOfHer = "11";
+const aboutHer = `Her name is ${nameFirst} and she is ${ageOfHer} years old.`;
+console.log(aboutHer);
+
+
+//undefined, null, biginit
+
+const o = 90;
+const p = 100;
+const sum = `The sum is ${o + p} but not the ${2 * (o + p)}`;
+console.log(sum);
+
+const person = "Gen-Z";
+console.log(typeof person, person);
+
+console.log(Number.MAX_SAFE_INTEGER);
+
+const numberFirst = BigInt(4287678662572682585689);
+const numberSecond = 454578678678n;
+console.log(numberFirst + numberSecond);
+
+const num_1 = 34;
+const num_2 = 24;
+console.log(num_1 < num_2);
+console.log(num_1 != num_2);
+console.log(num_1 == num_2);
+console.log(num_1 === num_2);
+
+const num_3 = "22";
+const num_4 = 22;
+console.log(num_3 === num_4); // === - similar data value and similar data type.
+
 
 
 
