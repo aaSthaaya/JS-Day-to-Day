@@ -32,10 +32,40 @@ console.log(typeof theundefinedname);
 let a = null;
 console.log(typeof a);
 let s;
-console.log(typeof 22 * s);
+console.log(typeof s);
 
 const someData = 999;
 console.log(typeof someData + " Wisen"); //number Wisen
 console.log(typeof (someData + "Wisen")); //string
+
+
+let firstName = "Damsel";
+firstName = Number(firstName);
+console.log(typeof firstName);
+
+//adding two strings
+const stringFirst = "Albert";
+const stringSecond = "Einstien";
+const newString = stringFirst + " " + stringSecond;
+console.log(newString);
+
+//converting string to number and than adding them
+const strFirst = "123";
+const strSecond = "456";
+const newStr = +strFirst + +strSecond;
+console.log(newStr);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
