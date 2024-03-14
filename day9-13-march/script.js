@@ -47,7 +47,8 @@ console.log(fruits.substr(-8)); //if the first parameter is negative, the positi
 
 console.log(fruits.substring(0, 6));
 
-const country = "The USA is the richest country in the world."
+const country = "The USA is the richest country in the world.";
+
 console.log(country.toUpperCase());
 
 console.log(country.toLowerCase());
@@ -94,7 +95,8 @@ console.log(phrase);
 
 
 let area = "BackStreet_02 trunk garden";
-console.log(area.split(""));
+const chars = area.split(" ");
+console.log(chars[2]);
 
 
 
