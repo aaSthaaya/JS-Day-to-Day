@@ -129,7 +129,7 @@ switch (day) {
 
 //Following is the example of a single operation sequential case statement, where four different values perform exactly the same.
 
-const animal = "Penguin";
+const animal = "Dodo Duck";
 
 switch (animal) {
     case "Penguin":
@@ -149,10 +149,51 @@ switch (animal) {
 }
 
 
+//Loop
+
+//While Loop
+
+//DRY(Don't Repeat Yourself)
+
+// const x = 0;
+// while (x < 2) {
+//     x++;
+//     console.log(x);
+// }
+
+let x = 0;
+while (x <= 5) {
+
+    console.log(x);
+    x++;
+}
+console.log(`The current value of x is ${x}`);
+console.log("Hiii");
 
 
+let c = 0;
+let total = 0;
+while (c <= 50) {
+    total = total + c;
+    c++;
+}
+console.log(total);
+
+//alternative for the above problem(Mathematical way)
+
+const num = 50;
+const numTotal = (num * (num + 1)) / 2;
+console.log(numTotal);
 
 
+for (let z = 0; z <= 9; z++) {
+    console.log(z);
+}
 
-
+let result = 0;
+let num1 = 100;
+for (let d = 1; d <= num1; d++) {
+    result += d;
+}
+console.log(result);
 
