@@ -56,16 +56,45 @@ if (userGuess === 20) {
 }
 else {
 
-if (userGuess < 20) {
-    console.log("Your guess was lower than the actual number.");
+    if (userGuess < 20) {
+        console.log("Your guess was lower than the actual number.");
 
-} else {
-    console.log("Your guess was more than the actual number.");
+    } else {
+        console.log("Your guess was more than the actual number.");
+    }
 }
+
+const a = 0;
+let finalResult = -1;
+if (finalResult >= a) {
+    console.log("Positive Number.");
+}
+else {
+    console.log("Negative number");
 }
 
+//if-elseif
 
+let tempInDegree = +prompt("Enter the temperature in celsius.");
 
+if (tempInDegree < 0) {
+    console.log("It's freaking cold outside.")
+}
+else if (tempInDegree < 20) {
+    console.log("It's cold outside.")
+}
+else if (tempInDegree < 30) {
+    console.log("It's mild outside.")
+}
+else if (tempInDegree < 40) {
+    console.log("It's hot outside.")
+}
+else if (tempInDegree < 50) {
+    console.log("It's boiling hot outside.")
+}
+else {
+    console.log("Don't bother, You might be living in the sun.");
+}
 
 
 
