@@ -197,3 +197,19 @@ for (let d = 1; d <= num1; d++) {
 }
 console.log(result);
 
+//break and continue keyword
+
+// for(let v=0; v<=10; v++){
+//     if(v===3){
+//         break;
+//     }
+//     console.log(v);
+// }
+for(let v=0; v<=18; v++){
+    if(v==10){
+        continue;
+    }
+    console.log(v);
+}
+
+
