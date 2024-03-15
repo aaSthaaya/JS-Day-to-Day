@@ -97,7 +97,46 @@ const num_3 = "22";
 const num_4 = 22;
 console.log(num_3 === num_4); // === - similar data value and similar data type.
 
+// const personAge = 49;
+// if (personAge < 50) {
+//     console.log("He/She can play jump KTM.");
 
+// }
+// else {
+//     console.log("He/She cannot play jump KTM.");
+// }
+
+const personAge = 55;
+let newPersonAge = personAge <= 50 ? "Can play jump KTM." : "Cannot play jump KTM.";
+console.log(newPersonAge);
+
+
+// const num = 22;
+// if (num % 2 === 0) {
+//     console.log("Even");
+// } else {
+//     console.log("Odd");
+// }
+
+const num = 22;
+let numberr = num % 2 === 0 ? "Even" : "Odd";
+console.log(numberr);
+
+
+//Ternary Operator
+
+// const agE = 14;
+// let drink;
+// if (agE <= 15) {
+//     console.log("Drink Coffee")
+// }
+// else {
+//     console.log("Drink Milk");
+// }
+
+let agE = 10;
+let drink = agE >= 15 ? "Coffee" : "Milk";
+console.log(drink);
 
 
 
