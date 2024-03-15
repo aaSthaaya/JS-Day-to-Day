@@ -96,9 +96,57 @@ else {
     console.log("Don't bother, You might be living in the sun.");
 }
 
+//Switch Statement
 
+//7 days a week using switch conditional statement
 
+const day = 7;
+switch (day) {
+    case 1:
+        console.log("Sunday");
+        break;
+    case 2:
+        console.log("Monday");
+        break;
+    case 3:
+        console.log("Tuesday");
+        break;
+    case 4:
+        console.log("Wednesday");
+        break;
+    case 5:
+        console.log("Thursday");
+        break;
+    case 6:
+        console.log("Friday");
+        break;
+    case 7:
+        console.log("Saturday");
+        break;
+    default:
+        console.log("Invalid day.");
+}
 
+//Following is the example of a single operation sequential case statement, where four different values perform exactly the same.
+
+const animal = "Penguin";
+
+switch (animal) {
+    case "Penguin":
+    case "Dog":
+    case "Bear":
+    case "Rabbit":
+    case "Giraffe":
+    case "Cow":
+    case "Cat":
+        console.log("The given name of the animal has not gone extinct.");
+        break;
+    case "Dinosaur":
+    case "Mammoth":
+    case "Dodo Duck":
+    default:
+        console.log("The given name of the animal has not gone extinct.");
+}
 
 
 
