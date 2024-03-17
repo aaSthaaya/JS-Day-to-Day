@@ -77,9 +77,9 @@ console.log(vegetables);
 
 let num1 = 20;
 let num2 = num1;
- num1 = 40;
- console.log(num1);
- console.log(num2);
+num1 = 40;
+console.log(num1);
+console.log(num2);
 
 //Reference Data Type
 
@@ -91,3 +91,46 @@ array1.push('item3');
 console.log('After pushing element to array1, we get:');
 console.log('array1', array1);
 console.log('array2', array2);
+
+//Cloning an Array using slice(), concate and spread operator[...firstArrayName]
+
+//Two ways to clone an array i.e
+//one by using the slice() method.
+
+let array3 = ['item4', 'item5'];
+// let array4 = array3.slice(0);
+// array3.push('item6');
+// console.log(array3===array4);
+// console.log(array3);
+// console.log(array4);
+
+//another way is by adding or concatenating empty array with array-first i.e;
+
+// let array4 = [].concat(array3);
+// array3.push('item6');
+// console.log(array3 === array4);
+// console.log(array3);
+// console.log(array4);
+
+
+//by using spread operator
+
+let array4 = [...array3];
+array3.push('item6');
+console.log(array3 === array4);
+console.log(array3);
+console.log(array4);
+
+// let array5 = ['a1', 'a2', 'a3', 'a4', 'a5'];
+// let array6 = array5.slice(0).concat(['a7','a8']);
+// array6.push('a6');
+// console.log(array5);
+// console.log(array6);
+
+let array5 = ['a1', 'a2', 'a3', 'a4', 'a5'];
+ let array6 =[...array5,'a6', 'a7', 'a8'];
+// array6.push('a6');
+ console.log(array5);
+ console.log(array6);
+
+ 
