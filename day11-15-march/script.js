@@ -205,11 +205,28 @@ console.log(result);
 //     }
 //     console.log(v);
 // }
-for(let v=0; v<=18; v++){
-    if(v==10){
+for (let v = 0; v <= 18; v++) {
+    if (v == 10) {
         continue;
     }
     console.log(v);
 }
 
+//Do While
+// let g = 0;
+// while (g <= 3) {
+//     console.log(g);
+//     g++;
+
+// }
+
+//It can be done by using do while as well
+
+let g = 0;
+do{
+    console.log(g);
+    g++;
+}
+while(g<=5);
+console.log(`The value of g is ${g}`);
 
