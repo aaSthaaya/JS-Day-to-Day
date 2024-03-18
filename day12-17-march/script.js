@@ -133,4 +133,18 @@ let array5 = ['a1', 'a2', 'a3', 'a4', 'a5'];
  console.log(array5);
  console.log(array6);
 
- 
+ //when we want to combine two array in the third array we can do easily by using spread operator such as;
+
+ let listOfKings = ['पृथ्वी नारायण शाह', 'प्रताप सिंह शाह', 'रण बहादुर शाह', 'राजेन्द्र विक्रम शाह', 'त्रिभुवन वीर विक्रम शाह'];
+ let listOfPresident = [' Pushpa Kamal Dahal', 'Raghubir Mahaseth', 'Narayan Kaji Shrestha'];
+ let totalKingsAndPresidents = [...listOfKings, ...listOfPresident];
+ console.log(totalKingsAndPresidents);
+ console.log(listOfKings);
+ console.log(listOfPresident);
+
+
+
+//for loop in array
+
+
+
