@@ -73,9 +73,9 @@ for (const value of myArray) {
 //example
 
 const iterable = [10, 20, 30];
-for(let value of iterable) {
+for (let value of iterable) {
     value /= 2;
-console.log(value);
+    console.log(value);
 }
 
 //Array Destructing - helps to extract values from array and assign them to individual variable.
@@ -96,3 +96,43 @@ console.log(`Value is ${var1}.`);
 console.log(`Value is ${var2}.`);
 console.log(newArray);
 
+
+//Javascript Object
+
+const person = {
+    name: 'Kristein Stwewart',
+    age: 35,
+    hobbies: ['Acting', 'Dancing', 'Theature']
+
+}
+console.log(person);
+// console.log(person.name); //dot notation
+
+console.log(person['name']); //bracket notation
+console.log(person.age);
+console.log(person.hobbies);
+
+
+const player = {
+    name: 'Ranveer',
+    play: 'Basketball',
+    likes: ['Football', 'Volleyball']
+}
+//we can add key value pair to objects
+player.gender = 'Male';
+console.log(player);
+
+//difference between dot and bracket notation
+
+const key = 'email';
+
+const country = {
+    name: 'Nepal',
+    code: 977,
+    'popular for': ['Mt. Everest', 'Lord Buddha'] //we are not allowed to give space in javascript we can only give space if variable are kept within the strings. 
+}
+// console.log(country['popular for']);
+country[key] = 'aastha@gmail.com';
+console.log(country);
+
+ 
