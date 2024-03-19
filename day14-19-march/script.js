@@ -125,9 +125,54 @@ const band = {
     memberName: ["Jisoo", "Jennie", "Rose", "Lisa"]
 };
 
-let { bandName,  memberName, ...restProp } = band;
+let { bandName, memberName, ...restProp } = band;
 console.log(bandName, memberName, restProp);
 
+
+//Objects in Array.
+//Very useful in real World.
+//Syntax
+// const arrName = [
+//     {},
+//     {},
+//     {},
+//     {}
+// ]
+
+const users = [
+    { userId: 1, firstName: "Saili", gender: "female" },
+    { userId: 2, firstName: "Sam", gender: "male" },
+    { userId: 3, firstName: "Fai", gender: "male" },
+    { userId: 4, firstName: "Lily", gender: "female" }
+]
+for (const user of users) {
+    console.log(user);
+}
+
+//Nested Destructuring
+
+// const chocolate = [
+//     { type: 1, chocolateName: " DarkChocalate" },
+//     { type: 2, chocolateName: " RubyChocalate" },
+//     { type: 3, chocolateName: " MilkChocalate" },
+//     { type: 4, chocolateName: " WhiteChocalate" }
+// ]
+// const [type1, type2, type3, type4] = chocolate;
+// console.log(type1);
+
+
+//Another Example for nested Destructuring
+
+const people = [
+    { userId: 1, firstName: "Aarash", gender: "Male" },
+    { userId: 2, firstName: "Aarohi", gender: "Female" },
+    { userId: 3, firstName: "Rush", gender: "XMale" },
+]
+// const [firstName] = people;
+// console.log(firstName,gender);
+// console.log(firstName);
+const [user1, user2, user3] = people;
+console.log(user1, user2, user3);
 
 
 
