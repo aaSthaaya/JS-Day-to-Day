@@ -130,7 +130,22 @@ myFunction();
 // output: index of target if target present in array
 
 
-function findTarget(array, target) {
+// function findTarget(array, target) {
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === target) {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+// const myArray = [4, 6, 8, 93]
+// const ans = findTarget(myArray, 93);
+// console.log(ans);
+
+
+//With the help of function expression the above program would look like:
+
+const findTarget = function (array, target) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === target) {
             return i;
@@ -138,10 +153,9 @@ function findTarget(array, target) {
     }
     return -1;
 }
-const myArray = [4, 6, 8, 93]
-const ans = findTarget(myArray, 93);
+const myArray = [4, 6, 8, 99];
+const ans = findTarget(myArray, 8);
 console.log(ans);
-
 
 // function sumOfThreeNumbers(Number1, Number2, Number3) {
 //     return Number1 + Number2 + Number3;
@@ -165,3 +179,13 @@ console.log(sum);
 
 
 
+//Arrow Function
+
+const birthdayMessage = () => {
+    console.log("Light travels faster than sound. This is why some people appear bright until you hear them speak.");
+}
+birthdayMessage();
+
+const vegesPure = () => {
+    console.log()
+}
