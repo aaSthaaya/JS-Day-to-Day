@@ -127,3 +127,90 @@ myFunction();
 
 //Arguments
 
+function myMultiplications(a, b) { //(a,b) -> parameters
+    return a * b;
+}
+const answer = myMultiplications(33, 55); // (33,55) -> arguments
+console.log(answer);
+
+function mySubtraction(s, t) {
+    return s - t;
+}
+const subt = mySubtraction(33, 22);
+console.log(subt);
+
+
+
+
+function myAddition(s, t) {
+    return s + t;
+}
+const result = myAddition(2, 3);
+console.log(result);
+
+//Global Scopes and Functions
+
+var firstPersonName = "Sasha";
+function stringName() {
+    console.log(firstPersonName);
+}
+stringName();
+
+// function findLargest(numbers){
+//     return Math.max(...numbers);
+// }
+// console.log(findLargest([2, 5, 7, 9, 60, 4, 1]));
+
+function smallestNumber(number) {
+    return Math.min(...number);
+}
+console.log(smallestNumber([1, 3, 7, 9, 34, 56, 0, -5]));
+
+let y = 12;
+let age = (y <= 16) ? "Cannot vote" : "Can Vote"; //ternary operator : variable = (condition) ? 'value1' : 'value2';
+console.log(age);
+
+function minusNumber(num) {
+    return num - 50;
+}
+console.log(minusNumber(45));
+
+let changedNumber = 8;
+
+function changableNumber(numb) {
+    return (numb + 5) / 4;
+}
+changedNumber = changableNumber(10);
+console.log(changedNumber);
+
+//Stand In Line or We can say nextInLine
+
+// const testArray = [11, 22, 33, 44, 55, 66];
+// const testItem = [88, 99];
+// const removedItem = nextInLine(testArray, testItem);
+// console.log(testArray);
+// console.log(removedItem);
+
+// const testArr = [1, 2, 3, 4, 5];
+// const newItem = 10;
+// const removedItem = nextInLine(testArr, newItem);
+
+// console.log("Before:", testArr); // [2, 3, 4, 5, 10]
+// console.log("After:", testArr); // [2, 3, 4, 5]
+// console.log("Removed item:", removedItem); // 1
+// function nextInLine(arr, item) {
+//     return item;
+// }
+// let arr = [4, 5, 6];
+// console.log(nextInLine(arr, 7));
+
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    return arr.shift();
+}
+var testArr = [1, 2, 3, 4, 5];
+console.log("Before:" + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After:" + JSON.stringify(testArr));
+
