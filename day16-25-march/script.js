@@ -73,3 +73,57 @@ function wordBlanks(myNoun, myAdj, myVerb, myAdv) {
 }
 
 console.log(wordBlanks("cat", "little", "ran", "quickly"));
+console.log(wordBlanks("BMW", "huge", "rode", "slowly"));
+
+//Arrays
+
+const oldArray = [20, 30, 40, 50, 70, 90];
+const newArray = oldArray[4];
+console.log(newArray);
+
+let typeArray = [33, 44, 55, 66];
+typeArray[0] = 22;
+console.log(typeArray);
+
+
+let arrayFirst = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[45, 55, 77], 55, 89, 90]];
+let newFirstArray = arrayFirst[1][2];
+console.log(newFirstArray);
+
+// const names = ["Shirish", "Basanta", "Barsa", "Basanta"];
+// const count = names.push(["Grishma", "Sharad", "Hemanta"]);
+// console.log(count);
+// console.log(names); 
+
+
+const animals = ['Giraffe', ' Leopard', 'Cappibara', 'Rabbit'];
+
+const count = animals.push('hyenas');
+console.log(count);
+console.log(animals);
+
+const vegetable = ["Spinach", "Carrot", "Potato", "Raddish"];
+const moreVeges = ["Cauliflower", "Beetroot"];
+
+vegetable.push(...moreVeges);
+console.log(vegetable);
+
+
+const fruits = ["Mangoes", "Apple", "Grapes", "Kiwi"];
+const total = fruits.pop();
+console.log(fruits);
+
+const sports = [["hockey,1"], ["baseball,2"], ["swimming,3"]];
+const newSports = sports.pop();
+console.log(sports);
+
+
+//Functions
+
+function myFunction() {
+    console.log("Working on it.");
+}
+myFunction();
+
+//Arguments
+
