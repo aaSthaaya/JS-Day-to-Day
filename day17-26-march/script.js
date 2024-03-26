@@ -119,8 +119,56 @@ function greaterThan(a, b) {
     }
     return false;
 }
-console.log(greaterThan(60, 40)); 
+console.log(greaterThan(60, 40));
 
 //
+function abTest(a, b) {
+    if (a < 0 || b < 0) {
+        return undefined;
+    }
+    return Math.round(Math.pow((Math.sqrt(a) + Math.sqrt(b)), 2));
+}
+console.log(abTest(32, 16));
 
+
+
+//Objects
+
+const myDog = {
+    name: "Puddle",
+    age: 3,
+    leg: 4,
+    bff: "me"
+};
+console.log(myDog.name);
+myDog.name = "Shiro";
+console.log(myDog.name);
+myDog["bark"] = "woof";
+delete myDog.leg;
+console.log(myDog);
+
+
+function phoneticLookUp(val) {
+    let result = "";
+    let lookup = {
+        "alpha": "Santa",
+        "beta": "Owl",
+        "gamma": "Deer",
+        "delta": "Wolf"
+    };
+    result = lookup[val];
+    return result;
+}
+console.log(phoneticLookUp("delta"));
+
+let heroes = ["Spider-man", "Hulk", "Iron-man", "Captain-America", "Doctor-Strange"];
+
+/* for (let i = 0; i < heroes.length; i++) {
+    console.log(heroes[i]);
+}
+*/
+
+for (let keys of heroes) {
+    console.log(keys);
+}
 
