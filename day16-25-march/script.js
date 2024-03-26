@@ -214,3 +214,77 @@ console.log("Before:" + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After:" + JSON.stringify(testArr));
 
+
+
+function testNum(a) {
+    let result;
+    if (a > 0) {
+        result = "Positive Number."
+    } else {
+        result = "Negative Number."
+    }
+    return result;
+}
+console.log(testNum(-8));
+
+
+
+
+function thisFunction(isItTrue) {
+    if (isItTrue) {
+        return "It's true."
+    }
+
+    return "No, It's not true."
+}
+
+console.log(thisFunction(false));
+
+function testEqual(val) {
+    if (val == 12) {
+        return "Equal!";
+
+    }
+    return "Not Equal!";
+}
+console.log(testEqual(13));
+
+
+function testStrictEqual(num2) {
+    if (num2 !== 10) {
+        return "The new number is not equal to given existing number."
+    }
+    return "The new number is equal to given existing number."
+}
+console.log(testStrictEqual(10));
+
+//And, Or Operator
+
+function testLogicalAnd(val) {
+    if (val <= 50 && val >= 20) {
+        return "Yup, The answer is correct.";
+    }
+    return "Nope, The answer is incorrect.";
+}
+console.log(testLogicalAnd(25));
+
+
+//Chaining If..Else Statement
+
+function testSize(numberFirst) {
+    if (numberFirst < 5) {
+        return "Tiny.";
+    } else if (numberFirst < 10) {
+        return "Small.";
+    } else if (numberFirst < 15) {
+        return "Medium.";
+    } else if (numberFirst < 20) {
+        return "Large.";
+    } else if (numberFirst < 25) {
+        return "Huge.";
+    }
+}
+console.log(testSize(22));
+
+
+
