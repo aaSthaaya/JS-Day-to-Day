@@ -169,6 +169,27 @@ let heroes = ["Spider-man", "Hulk", "Iron-man", "Captain-America", "Doctor-Stran
 */
 
 for (let keys of heroes) {
-    console.log(keys);
+    console.log(keys.toLowerCase());
 }
+document.write("<br>");
+const cities = ["Pokhara", "Kathmandu", "Dharan", "Lalitpur", "Mahendranagar"];
+for (let element of cities) {
+    console.log(element.toUpperCase());
+}
+
+//Nested object
+const myStorage = {
+    car: {
+        inside: {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        outside: {
+            trunk: "jack"
+        }
+    }
+};
+const gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
+
 
