@@ -33,6 +33,7 @@ let divBoxes = document.querySelectorAll(".box");
 //     box.innerText = `This is box number ${idx}.`;
 //     idx++;
 // }
+
 idx = 1;
 for (const box of divBoxes) {
     box.innerText = `This box's number is assigned as ${idx}.`;
