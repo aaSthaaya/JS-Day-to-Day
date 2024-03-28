@@ -191,5 +191,16 @@ const productArr = [2, 5, 6, 7];
 const productOfArray = productArr.reduce((prev, curr) => {
     return prev * curr;
 });
-console.log(productOfArray);
+console.log("Product of numbers = ", productOfArray);
+
+const p = prompt("Enter the number: ");
+const aRR = [];
+
+for (i = 1; i <= p; i++) {
+    aRR[i - 1] = i;
+}
+console.log(aRR);
+
+
+
 
