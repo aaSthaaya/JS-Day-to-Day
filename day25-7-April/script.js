@@ -1,27 +1,27 @@
 //Promises Revision
 
-function getData(dataId, getNextData) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("data:", dataId);
-            resolve("Success");
-            // reject("Error");
-            if (getNextData) {
-                getNextData();
-            }
-        }, 2000);
-    });
-};
+// function getData(dataId, getNextData) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("data:", dataId);
+//             resolve("Success");
+//             // reject("Error");
+//             if (getNextData) {
+//                 getNextData();
+//             }
+//         }, 2000);
+//     });
+// };
 
-getData(1).then((res) => {
-    return getData(2);
-})
-    .then((res) => {
-        return getData(3);
-    })
-    .then((res) => {
-        return getData(4);
-    });
+// getData(1).then((res) => {
+//     return getData(2);
+// })
+//     .then((res) => {
+//         return getData(3);
+//     })
+//     .then((res) => {
+//         return getData(4);
+//     });
 
 
 
@@ -91,5 +91,45 @@ getData(1).then((res) => {
 //     });
 // });
 
+
+//Async & Await
+
+// async function hello() {
+//     console.log(hello);
+// }
+// function api() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Weather Data.");
+//             resolve("Success.");
+//         }, 2000);
+//     });
+// }
+// function api() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Weather Data");
+//             resolve("Success.");
+//         }, 2000);
+//     });
+// }
+// async function getWeatherData() {
+//     await api();
+// }
+
+function getData(dataId) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Data:", dataId);
+            resolve("Success.");
+        }, 2000);
+    });
+};
+
+async function getAllData() {
+    await getData(1);
+    await getData(2);
+    await getData(3);
+};
 
 
